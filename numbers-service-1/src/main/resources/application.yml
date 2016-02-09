@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: numbers-service
+
+server:
+  port: 0
+
+security:
+  basic:
+    enabled: false
+eureka:
+  instance:
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}

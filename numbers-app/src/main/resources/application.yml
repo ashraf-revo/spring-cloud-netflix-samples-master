@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: numbers
+
+security:
+  basic:
+    enabled: false
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.cloud: DEBUG
+    io.pivotal.springcloud: DEBUG
+server:
+  port: 0
